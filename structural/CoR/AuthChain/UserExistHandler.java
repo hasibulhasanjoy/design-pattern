@@ -6,7 +6,7 @@ public class UserExistHandler extends Handler {
             System.out.println("Found user: " + request.getUsername());
         } else {
             System.out.println("user not found");
-            next = null;
+            return;
         }
 
         if (next != null) {

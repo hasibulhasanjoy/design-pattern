@@ -6,7 +6,7 @@ public class RoleAuthorizationHandler extends Handler {
             System.out.println("Role authorized!");
         } else {
             System.out.println("unauthorized role");
-            next = null;
+            return;
         }
 
         if (next != null) {

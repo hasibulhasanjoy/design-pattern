@@ -6,7 +6,7 @@ public class PasswordValidationHandler extends Handler {
             System.out.println("password matched!");
         } else {
             System.out.println("password didn't matched");
-            next = null;
+            return;
         }
 
         if (next != null) {
